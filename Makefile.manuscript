@@ -1,0 +1,11 @@
+MAIN=mainfilename
+SUPP=suppfilename
+REFS=bibfilename
+
+all: $(MAIN).pdf $(SUPP).pdf
+
+$(MAIN).pdf: $(MAIN).tex $(REFS).bib $(SUPP).tex
+	latexmk -pdf $(MAIN).tex; latexmk -pdf $(SUPP).tex
+
+clean:
+	rm -f $(MAIN).[abflo]* $(SUPP).[abflo]*

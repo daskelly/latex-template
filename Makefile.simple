@@ -1,0 +1,9 @@
+NAME=documentname
+
+all: $(MAIN).pdf
+
+$(MAIN).pdf: $(MAIN).tex
+	latexmk -pdf $(MAIN).tex
+
+clean:
+	rm -f $(MAIN).[abflo]*
