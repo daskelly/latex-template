@@ -743,7 +743,7 @@ to\hsize{\if@nfeven\else\hfil\fi\box\@tempboxa\if@nfeven\hfil\fi}
 
 % Copyright Information
 %
-\RequirePackage{acmcopyright}
+%\RequirePackage{acmcopyright}
 
 \def\maketitle{%
    \thispagestyle{titlepage}%
